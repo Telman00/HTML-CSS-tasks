@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* MENU */
+h1 {
+  text-align: center;
+  margin-top: -60px;
+  text-shadow: 2px 2px 5px rgb(37, 154, 233);
+}
+/* menu icon */
+.icon {
+  display: inline-block;
+  color: black;
+  padding-left: 30px;
+  padding-top: 50px;
+  margin-top: -30px;
+}
+/* glass icon */
+.icon2 {
+  display: inline-block;
+  margin-left: 55%;
+  margin-bottom: -1px;
+}
+.search {
+  display: inline-block;
+  width: max-content;
+  display: flex;
+  padding: 15px;
+  border-radius: 25px;
+  margin-left: 72.5%;
+  margin-bottom: -10px;
+}
+.search-input {
+  font-size: 16px;
+  color: black;
+  margin-left: 14px;
+  border-radius: 5px;
+  background: transparent;
+}
+.icon,
+.icon2,
+.search {
+  justify-content: space-between;
+  align-items: center;
+}
+/* navigation */
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: #16b8ce;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.active {
+  background-color: #210866;
+}
+.active1 {
+  background-color: #a50a0a;
+}
+
+.page1 {
+  background-color: grey;
+  background-size: contain;
+}
+
+.container {
+  position: relative;
+  font-family: Arial;
+  display: block;
+  width: 117%;
+  height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/1224636.jpg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+  margin-top: 10px;
+  background-color: aqua;
+}
+.img {
+  margin-left: -50px;
+}
+/* text */
+.text-block {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgb(57, 111, 136);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10%;
+  margin-top: -20px;
+  margin-right: 50%;
+}
+.text-block1 {
+  position: absolute;
+
+  top: 20px;
+  background-color: rgb(43, 122, 36);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  margin-right: -165%;
+  margin-top: 190%;
+  margin-left: 30%;
+}
+h1 {
+  font-size: 50px;
+}
+.container1 {
+  position: relative;
+  font-family: Arial;
+  display: block;
+  width: 117%;
+  height: 100vh;
+  background-image: url("https://t4.ftcdn.net/jpg/05/79/83/69/360_F_579836914_yo2WTNUIDANJPGGvhXSGMRc6bfCmUGM7.jpg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+  margin-top: 80px;
+  background-color: aqua;
+}
+
+.text-block2 {
+  position: absolute;
+
+  top: 20px;
+  background-color: rgb(43, 122, 36);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  margin-right: 70%;
+  margin-top: 72%;
+  }
+.img1 {
+  margin-left: -6%;
+}
+/* footer */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-top: 10%;
+  margin-left: -5%;
+  background-color: rgb(6, 11, 87);
+  color: white;
+  z-index: -1;
+  text-align: center;
+}
+.icon3,
+.p3 {
+  text-align: center;
+  margin-right: 1%;
+  font-size: 50px;
+}
