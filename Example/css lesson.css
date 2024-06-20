@@ -63,10 +63,22 @@ h1:hover{
    text-align: center;
    background-color: red; 
 
-   animation: myslide;
+   animation: mySlide;
+   animation-play-state: running;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-delay: 1s;
+   animation-timing-function: ease-in;
 
+   
+}
+#box1:active{
+   animation: 3s linear os infinite running mySlide ;
 }
 @keyframes mySlide{
-   from{}
-   to{}
+   from{margin-left: 100%;}
+   to{margin-left: 0%;}
+}
+@keyframes mySlide{
+   100%{transform: rotateY(360deg);}
 }

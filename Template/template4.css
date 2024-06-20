@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container1 {
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(201, 236, 250);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact1 {
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+}
+.p-contact1 {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+.p-contact1-1 {
+  display: flex;
+  gap: 10px;
+}
+.contact2 {
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+}
+.p-contact2 {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+.i-contact {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+i {
+  width: 30px;
+  height: 30px;
+  color: blue;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 100px;
+  margin-right: 10px;
+  padding-top: 6px;
+  cursor: pointer;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+}
+.nav-h {
+  color: blue;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.nav-list ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.nav-list ul a {
+  text-decoration: none;
+  color: black;
+}
+.a-text a {
+  border: 1px solid skyblue;
+  padding: 20px 20px;
+  color: white;
+  background-color: skyblue;
+}
+.container3 {
+  height: 66.8vh;
+  width: 100%;
+  background-color: blue;
+  position: relative;
+}
+.h-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h-left1 {
+  color: white;
+  margin-top: 15%;
+}
+
+.h-right1 {
+  text-align: center;
+  width: 40%;
+  height: 250%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 40px;
+  line-height: 400px;
+}
+.container4 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+ 
+}
+.text-4 {
+  margin: 30px;
+}
+.h-4 {
+  font-size: 40px;
+  color: rgb(26, 26, 46);
+}
+.p-4 {
+  font-size: 20px;
+  padding-top: 20px;
+  color: grey;
+}
+.button-4 {
+    padding: 10px 20px;
+  margin-top: 30px;
+color: grey;
+   cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 1px solid grey;
+}
+.main1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+ 
+}
+.main-h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 60px;
+  color: rgb(26, 26, 46);
+}
+
+.section-2 {
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  background-color: rgb(177, 211, 224);
+  color: grey;
+  border: 1px solid rgb(177, 211, 224);
+border-radius: 5px;
+}
+.main2 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+.h3-5{
+  color: rgb(26, 26, 46);
+}
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  background-color: blue;
+}
+.content-text {
+  margin: 30px;
+}
+.h4-content {
+  font-size: 50px;
+  color: white;
+}
+.p-content {
+  font-size: 20px;
+  padding-top: 20px;
+  color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
