@@ -25,7 +25,7 @@ value = numbers;
 value = numbers.indexOf(100);
 
 value = numbers.push(22); // sonuna əlavə etmək;
-value = numbers.pop() //əvvəlinə əlavə etmək üçün
+value = numbers.pop() //sonundan silmək üçünı 
 value = numbers.unshift(50); // əvvələ əlavə etmək;
 value = numbers.shift() //əvvəlin silmək üçün 
 value = numbers; 
@@ -45,7 +45,7 @@ value = numbers;
  numbers.sort();
  numbers.sort(function(x,y){
     return(x-y) //Kiçikdən böyüyə sıralama
- })
+  })
  numbers.sort(function(x,y){
     return(y-x) //Böyükdən kiçiyə sıralama
  })
@@ -79,7 +79,7 @@ value = programmer['email']
 value = programmer.adress.city; 
 programmer.work()
 
-const programmers = [
+const programmers =    [
     {name : "Ferid", age: 25},
     {name: "Orxan", age: 24}
 

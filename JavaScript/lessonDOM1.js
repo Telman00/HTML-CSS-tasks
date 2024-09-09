@@ -1,4 +1,9 @@
-//wINDOWS Object
+                                      // Javascript ilə DOM Manipulyasiyası //
+
+
+//Window Object
+
+
 let value;
 
 value = document;
@@ -6,197 +11,274 @@ value = document.all;
 value = document.all.length;
 value = document.all[0];
 value = document.all[6];
-value = document.all[document.all.length - 1];
+value = document.all[document.all.length-1];
 
+value = document.all;
 value = document.body;
 value = document.head;
 value = document.location;
 value = document.location.hostname;
 value = document.location.port;
-console.log(value);
-const elements = document.all; // HTML Collection
 
-// for(let i = 0; i < elements.length;i++) {
-//       console.log(elements[i]);
-// }
-// elements.forEach(function(element) {
-//     console.log(element);
-// });
+value = document.URL;
 
-const collections = Array.from(document.all);
-console.log(typeof collections);
-collections.forEach(function(collection){
-    console.log(collection);
-})
+value = document.characterSet;
 
 
+//Part - 2//
 
-//  console.log(elements);
+value = document;
 
-//Document Object//
+//Scripts
 
-let value1;
+value = document.scripts;
+value = document.scripts.length;
+value = document.scripts[0];
 
-//Scripts 
+//Links
 
-value1 = document.scripts;
-value1 = document.scripts.length;
-value1 = document.scripts[0];
-
-//Link
-
-value1 = document.links;
-value1 = document.links[1];
-value1 = document.links[document.links.length-1];
-// // value1 = document.links[document.links.length-1].getAttribute("class");
-// // value1 = document.links[document.links.length-1].getAttribute("href");
-// value1 = document.links[document.links.length-1].className;
-// value1 = document.links[document.links.length-1].classList;
+value = document.links;
+value = document.links.length;
+value = document.links[0];
+value = document.links[document.links.length-1];
+value = document.links[document.links.length-1].getAttribute("class");
+value = document.links[document.links.length-1].getAttribute("href");
+value = document.links[document.links.length-1].className;
+value = document.links[document.links.length-1].classList;
 
 //Forms
 
-value1 = document.forms; 
-value1 = document.forms.length;
-value1 = document.forms;  
-value1 = document.forms[0]; 
-value1 = document.forms["form"];
-// value1 = document.forms[0].id;
-// value1 = document.forms[0].getAttribute("id");
-// value1 = document.forms[0].name;
-// value1 = document.forms[0].getAttribute("name");
+value = document.forms;
+value = document.forms.length;
+value = document.forms[0];
 
-// value1 = document.forms[0].method
-console.log(value1);
+value = document.forms[0].id;
+value = document.forms[0].getAttribute("id");
 
-// Element Id gore secmek
+value = document.forms[0].name;
+value = document.forms[0].getAttribute("name");
+
+value = document.forms[0].method;
+
+
+console.log(value);
+
+// Element Id görə seçmək
 
 let element;
 
-element = document.getElementById("element");
-element = document.getElementById("task");
+element = document.getElementById("todo-form");
+element = document.getElementById("tasks-title");
 
-// Element Class gore secmek
+// Element Class görə seçmək
 
-element = document.getElementsByClassName("value1");
-element = document.getElementsByClassName("card");
+element = document.getElementsByClassName("list-group-item");
+element = document.getElementsByClassName("list-group-item")[0];
 
-//Element Tag gore secmek
+element = document.getElementsByClassName("card-header");
+
+// Element Tag görə seçmək
 
 element = document.getElementsByTagName("div");
 
-// Query Selector - CSS Selector
+// QuerySelector - CSS Selector //Tək bir element seçir
 
-element = document.querySelector("#task");
 
-element = document.querySelector(".value1"); 
+element = document.querySelector("#todo-form");
+element = document.querySelector("#tasks-title");
 
-element = document.querySelector("h1");
+element = document.querySelector(".list-group-item");
+element = document.querySelector("li");
 element = document.querySelector("div");
-// querySelectorAll-butun elementleri sec
-element = document.querySelectorAll(".value1");
 
-element.forEach(function(el){
-    console.log(el);
-})
+// QuerySelectorAll - Bütün elementləri seç
+
+element = document.querySelectorAll(".list-group-item"); //Node List
+
+element.forEach (function(el){
+console.log(el);
+});
+
 console.log(element);
 
-//---------------------------------------//
 
-const element1 = document.querySelector("#task");
+const element1 = document.querySelector("#clear-todos");
 
-//  Element xüsusiyyətləri
+//Element xüsusiyyətləri
+
 console.log(element1.id);
 console.log(element1.className);
-console.log(element.classList);
-console.log(element1.classList[1]);
+console.log(element1.classList);
+console.log(element1.classList[0]);
 console.log(element1.textContent);
 console.log(element1.innerHTML);
 console.log(element1.href);
+console.log(element1.style);
 
-console.log(element1.style); 
 
 //Style və Element xüsusiyyətlərini dəyişdirmək
 
-// element.className = "" //className dəyişdirmək
-// element.style.color = "red" // rəng dəyişmək
-// element.style.marginLeft = "" // ölçü dəyişmək
-// element.href = "www.google.com"; // link 
-// element.target = "_blank";
-console.log(element1.textContent);
-element1.textContent = "Delete";
-// element1.textContent = <span>Delete</span>;
-element1.innerHTML = "<span style = 'color: green'>Delete</span>"
+// element1.className = "btn btn-primary";
+// element1.style.color = "black";
+// element1.style.marginLeft = "50px";
+// element1.href = "https://www.google.com.tr";
+// element1.target = "_blank";
 
-const elements1 = document.querySelectorAll(".value1");
-console.log(elements1); //Node List
+// console.log(element1.textContent);
+// element1.textContent = "Silmek lazimdi";
+// element1.innerHTML = "<span style = 'color:red'>Silmek lazimdir</span>"
 
-elements1.forEach(function(el){
-    el.style.color = "red";
-    el.style.background = "blue";
-})
 
 // console.log(element1);
 
-let element2 = document.querySelector("li:last-child");
-element2 = document.querySelector("li:nth-child(2)");
-element2 = document.querySelectorAll("li:nth-child(odd)");
-element2 = document.querySelectorAll("li:nth-child(even)");
+// const elements = document.querySelectorAll(".list-group-item"); //Node List
 
-element2.forEach(function(el){
-    el.style.backround = "red";
-    el.style.color = "blue";
-})
+// elements.forEach(function(el){
+//     el.style.color = "red";
+//     el.style.backgroundColor = "grey";
+// });
 
-//-------------------------------------//
+// let element2 = document.querySelector("li:last-child");
+// element2 = document.querySelector("li:nth-child(2)");
+// element2 = document.querySelector("li:nth-child(3)");
+// element2 = document.querySelector("li:nth-child(4)");
+// element2 = document.querySelectorAll("li:nth-child(odd)");
+// element2 = document.querySelectorAll("li:nth-child(even)");
 
-const todoList = document.querySelector(".value1");
-const todo = document.querySelector(".value1:nth-child(1)");
-const card = document.querySelector("card");
+// element2.forEach(function(el){
+//     el.style.color ="yellow";
+// el.style.backgroundColor = "red";
+// })
 
-value = todoList;
-value = todo;
-value = card;
+// console.log(element2);
 
-// Child Nodes - Text
+let value1;
 
+const todoList = document.querySelector(".list-group");
+const todo = document.querySelector("list-group-item:nth-child(2)");
+const cardrow = document.querySelector(".card.row");
 
-value = todoList.childNodes;
-value = todoList.childNodes[0];
-
-//Children - Element
-
-value = todoList.children;
-value = todoList.children[1];
-// value = todoList.children[todoList.children.length - 1];
-// value = todoList.children[2].textContent = "Deyisdi";
+value1 = todoList;
+value1 = todo;
+value1 = cardrow;
 
 
+// Child Nodes - Text Daxil
 
-value = card;
-// value = card.children;
-//value = card.children[2].children[1.textContent = "Deyisdi yene"];
+value1 = todoList.childNodes;
+value1 = todoList.childNodes[0];
 
-value = todoList;
-value = todoList.firstElementChild;
-value = todoList.lastElementChild;
+// Children - Only Element
 
-value = todoList.children.length;
-value = todoList.childElementCount;
+value1 = todoList.children;
+value1 = todoList.children[0];
+// value1 = todoList.children[2].textContent = "List";
 
-value = card;
-// value = card.parentElement;
-// value = card.parentElement.parentElement;
 
-//Element Sibling
-value - todo; 
-value = todo.previousElementSibling;
-value = todo.nextElementSibling;
-value = todo.nextElementSibling.nextElementSibling;
+value1 = cardrow;
+value1 = cardrow.children;
+// value1 = cardrow.children[2].children[1].textContent = "Listler";
 
-// value = todo.previousElementSibling;
-// value = todo.previousElementSibling.previousElementSibling; //Null
+value1 = todoList;
 
-console.log(value);
+value1 = todoList.firstElementChild;
+value1 = todoList.lastElementChild;
+
+value1 = todoList.children.length;
+value1 = todoList.childElementCount;
+
+value1 = cardrow;
+value1 = cardrow.parentElement;
+value1 = cardrow.parentElement.parentElement;
+
+// Element Sibling
+
+// value1 = todo;
+// value1 = todo.previousElementSibling;
+// value1 = todo.nextElementSibling;
+// value1 = todo.nextElementSibling.nextElementSibling;
+
+console.log(value1);
+
+// Yeni Element Yaratmaq
+
+//  <a id = "clear-todos" class="btn btn-dark" href="#">Tüm Taskları Temizleyin</a>
+
+const newLink = document.createElement("a");
+const cardbody = document.getElementsByClassName("card-body")[1];
+
+newLink.id = "clear-todos";
+newLink.className = "btn btn-danger";
+newLink.href = "https://www.google.com.tr";
+newLink.target = "_blank";
+
+//Text Content
+
+//Text Node
+
+newLink.appendChild(document.createTextNode("Fərqli Səhifəyə Get"));
+
+cardbody.appendChild(newLink);
+
+console.log(newLink);
+
+
+//Dinamik Element silmek
+
+// const todoList = document.querySelector("ul.list-group");
+const todos = document.querySelectorAll("li.list-group-item");
+
+// Remove Metodu
+
+// todos[1].remove();
+
+// Remove Child
+
+// todoList.removeChild(todoList.lastElementChild);
+// todoList.removeChild(todos[3]);
+
+console.log(todos);
+console.log(todoList);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

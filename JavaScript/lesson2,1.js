@@ -63,7 +63,7 @@ let value2 = 10;
 let value3 = 15;
 
 
-//Arithmetic operators
+ //Arithmetic operators
 
 
 value1 = value2 + value3;
@@ -162,7 +162,7 @@ console.log(value4);
 //Template Literal//
 
 const name1 = "Aliyev Kenan";
-const department = "New Hire";
+const department = "New Hire"; 
 const salary = 4000;
  
 // const a5 = "Isim: " + name + "\n" + "Departman:" + department + "\n" + "Maas: " + salary;

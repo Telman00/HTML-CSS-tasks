@@ -1,249 +1,238 @@
-// Yeni Element Yaratmaq
-
-const newLink = document.createElement("a");
-const card = document.getElementsByClassName("card")[0];
-
-newLink.id = "clear-todos";
-newLink.className = "button";
-newLink.href = "https://www.google.com.tr";
-newLink.target = "_blank";
-
-//Text Content
-
-// newLink.textContent = "Fərqli səhifəyə get";
-
-//Text Node - Elementin içinə yazı əlavə etmək
-
-//const text = document.createTextNode("");
-//card.appendChild(text);
-// console.log(card);
-//-----------------------------------------//
-
-newLink.appendChild(document.createTextNode("Fərqli səhifəyə get"));
-
-card.appendChild(newLink);
-console.log(newLink);
-
-
-// //Dinamik Element silmek -------//
-
-// const todoList = document.querySelector("");
-// const todos = document.querySelectorAll("");
-
-
-// // Remove Metodu
-
-// todos[1].remove();
-
-//Remove Child
-
-// todoList.removeChild(todoList.lastElementChild);
-// todoList.removeChild(todos[3]);
-
-// console.log(todos);
-// console.log(todoList);
-//============================//
-
-const todoInput = document.getElementById("todo");
-let element;
-
-element = todoInput;
-element = todoInput.classList;
-
-todoInput.classList.add("newClass");
-todoInput.classList.add("newClass2");  //Əlavə etmək
-todoInput.classList.remove("form-control"); // Silmək
-element = todoInput;
-
-element = todoInput.placeholder;
-element = todoInput.getAttribute("placeholder");
-todoInput.setAttribute("placeholder","Start");
-todoInput.setAttribute("title","Input");
-todoInput.removeAttribute("name");
-element = todoInput;
-// element = todoInput.hasAttribute("name");
-console.log(element);
-
-//================================//
-// Ikinci hisse//
-// 1. Event Listeners ve Event Objesi Kullanma
-
+                                        // Javascript - DOM Event //
+                      
 const filterInput = document.getElementById("filter");
-
 const todoForm = document.getElementById("todo-form");
 
 todoForm.addEventListener("submit",submitForm);
+
 function submitForm(e){
     console.log("Submit Event");
-
     e.preventDefault();
-}
+};
+
+
+//  filterInput.onfocus = function(){
+//     console.log("Necesen");
+//  }
 
 // filterInput.addEventListener("focus",function(e){
    
-//    console.log(e); 
-//    console.log(e.type);
-//    console.log(e.target);
-//    console.log(e.target.placeholder);
-//    console.log(e.target.className);
-//     // console.log("Start");
-// })
-// filterInput.onfocus = function(){
-//     console.log("Start");
+
+//     console.log(e);
+//     console.log(e.type);
+//     console.log(e.target);
+//     console.log(e.target.placeholder);
+//     console.log(e.target.className);
+    
+//     // console.log("Necesen");
+// });
+
+// //Klaviatura Event
+// const header = document.querySelector(".card-header");
+// const todoInput = document.querySelector("#todo");
+
+
+// todoInput.addEventListener("keyup",changeText);
+
+// function changeText(e){
+//     header.textContent = e.target.value;
+// // console.log(e.target.value);
+// };
+
+
+
+
+//keypress
+
+// document.addEventListener("keypress",run);
+
+// function run(e){
+// console.log(e.which); //ASCII Table
+//     console.log("Salam");
+//     console.log(e.key);
+    
 // }
 
-//======================================//
 
-// 2. Keyboard Eventleri - KeyUp,KeyPress,KeyDown
-
-//Keyboard Eventleri
- //ketpress
-document.addEventListener("keypress",run);
-
-function run(e){
-    // console.log(e.which); //ASCII cədvəli
-    console.log(e.key);
-    // console.log("Salam");
-}
 
 //keydown
-document.addEventListener("keydown",run);
 
-function run(e){
+// document.addEventListener("keydown",run);
+
+// function run(e){
+// console.log(e.which); //ASCII Table
+//     console.log("Salam");
+//     console.log(e.key);
     
-    console.log(e.key);
-   
-}
+// }
+
 
 //keyup
-document.addEventListener("keyup",run);
 
-function run(e){
+// document.addEventListener("keyup",run);
+
+// function run(e){
+// console.log(e.which); //ASCII Table
+//     console.log("Salam");
+//     console.log(e.key);
     
-    console.log(e.key);
-    
-}
+// }
 
-//Example
+// Mouse Event
 
-const header = document.querySelector(".card-header");
-const todoInput1 = document.querySelector("#todo");
+ const cardBody = document.querySelectorAll(".card-body")[1];
 
-todoInput.addEventListener("keyup",changeText);
+ const title = document.querySelector("#tasks-title");
 
-function changeText(e){
-    header.textContent = e.target.value;
-    // console.log(e.target.value);
-}
+ //Click Event
 
-// 3. Mouse Eventleri //
+//   title.addEventListener("click",run);
+   
+//   function run(e){
+//     console.log(e.type);
+//   };
 
-const cardBody = document.querySelectorAll(".card-body")[1];
+  // Double Click
 
-const title = document.querySelector("#tasks-title");
+//   title.addEventListener("dblclick",run);
 
-//Click Event
+//     function run(e) {
+//         console.log(e.type);
+//   };
 
-title.addEventListener("click",run);
-
-//Double Click
-
-title.addEventListener("dblclick",run);
-
-//Mouse Down
+// Mouse Down
 
 title.addEventListener("mousedown",run);
 
-//Mouse Up
+    function run(e) {
+        console.log(e.type);
+  };
+ // Mouse Up
 
-title.addEventListener("mouseup",run);
+ title.addEventListener("mouseup",run);
 
-//Mouse Over
+     function run(e) {
+         console.log(e.type);
+   };
 
-title.addEventListener("mouseover",run);
+   // Mouse Over
 
-//Mouse Out
+   title.addEventListener("mouseover",run);
 
-title.addEventListener("mouseout",run);
+       function run(e) {
+           console.log(e.type);
+     };
 
-cardBody.addEventListener("mouseover",run);
-cardBody.addEventListener("mouseout",run);
+    // Mouse OUT
+    title.addEventListener("mouseout",run);
 
-// Mouse Enter and Mouse Leave 
+        function run(e) {
+            console.log(e.type);
+      };
 
-cardBody.addEventListener("mouseenter",run);
-cardBody.addEventListener("mouseleave",run);
+      cardBody.addEventListener("mouseover",run);
+      cardBody.addEventListener("mouseout",run);
 
-function run(e) {
-    console.log(e.type);
-}
+      
+          function run(e) {
+              console.log(e.type);
+        };
 
-// 4. Input Eventleri //
+        //Mouse Enter and Mouse Leave
 
-// const filter = document.getElementById("filter");
+        cardBody.addEventListener("mouseenter",run);
+        cardBody.addEventListener("mouseleave",run);
 
-// document.addEventListener("DOMContentLoaded",load);
+        function run(e) {
+            console.log(e.type);
+      };
 
-// function load(e){
-//     console.log("Yuklendi");
-// }
+     
+     
+     
+      const filter = document.getElementById("filter");
 
-//Focus
+      document.addEventListener("DOMContentLoaded",load);
+      function load(e){
+        console.log("Sayfa yuklendi");
+      }
 
-filterInput.addEventListener("focus",run);
+      //Input Events
 
-//Blur
+      //Focus
 
-filterInput.addEventListener("blur",run);
+      filter.addEventListener("focus",run);
+     
+     //Blur
+      filter.addEventListener("blur",run);
+      
+      //Paste
+      
+      filter.addEventListener("paste",run);
 
-//Paste
-filterInput.addEventListener("paste",run);
 
-// Copy
-filterInput.addEventListener("copy",run);
+      //Copy
+      filter.addEventListener("copy",run);
+      
+      //Cut
+      filter.addEventListener("cut",run);
+      
 
-//Cut
-filterInput.addEventListener("cut",run);
+      //Select
+      filter.addEventListener("select",run);
 
-//Select
-filterInput.addEventListener("select",run);
+      function run(e){
+        console.log(e.type);
+      };
+
+      //Event Capturing and Bubbling
+
+// Event Bubbling
+
+document.querySelector(".container").addEventListener("click",function(){
+    console.log("Div Container");
+});
+document.querySelector(".card.row").addEventListener("click",function(){
+    console.log("Card Row");
+});
+document.querySelectorAll(".card-body")[1].addEventListener("click",function(){
+    console.log("Card Body");
+});
+
+//Event Capturing or Delegation
+
+const cardbody = document.querySelectorAll(".card-body")[1];
+
+cardbody.addEventListener("click",run);
 
 function run(e){
-    console.log(e.type);
-}
 
-//5. Event Capturing ve Bubbling Olayları
-
-//Event Bubbling
-
- document.querySelector(".container").addEventListener("click",function(){
-    console.log("Div Container");
- })
- document.querySelector(".card.row").addEventListener("click",function(){
-    console.log("Card Row");
- })
- document.querySelectorAll(".card-body")[1].addEventListener("click",function(){
-    console.log("Card Body");
- })
-
- //Event Capturing or Delegation 
-
- const cardbody = document.querySelectorAll(".card-body")[1];
-
- cardbody.addEventListener("click",run);
-
- function run(e){
-    if(e.target.className==="fa fa-remove"){
-    console.log("delete");
+    if (e.target.className ==="fa fa-remove") {
+        console.log("Silme islemi");
     }
-     if(e.target.id==="filter"){
-        console.log("filter work");
-        }
-        if(e.target.id === "clear-todos"){
-            console.log("All DELETE");
-        }
+if (e.target.id ==="filter"){
+    console.log("Filtreleme Islemi");
+}
+    if(e.target.id ==="clear-todos"){
+        console.log("Tum tasklari silme islemi");
+    }
+// console.log(e.target);
+};
 
 
- }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

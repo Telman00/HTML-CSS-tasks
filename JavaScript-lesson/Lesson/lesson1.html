@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson</title>
+    <style>
+      body {
+        transition: background-color 0.5s ease;
+      }
+      #changeButton {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        border: none;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+      #Artma {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        border: none;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+      #Azalt {
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: green;
+        color: white;
+        border: none;
+        margin: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+      #counter {
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+        background-color: grey;
+      }
+      .menu {
+        margin-top: 20px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 200px;
+        text-align: center;
+        cursor: pointer;
+      }
+      #menuTitle {
+        font-size: 20px;
+        padding: 10px;
+        background-color: lightgrey;
+      }
+      #menuItems {
+        display: none;
+        padding: 10px;
+      }
+      #menu a {
+        display: block;
+        padding: 8px 0;
+        text-decoration: none;
+        color: black;
+      }
+      #shadow {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      #text {
+        margin-top: 20px;
+      }
+      .hidden {
+        display: none;
+      }
+
+      #search {
+        padding: 10px;
+        font-size: 16px;
+        width: 200px;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 10px;
+        border: 1px solid wheat;
+        border-radius: 5px;
+        margin-top: 5px;
+      }
+      li.hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="changeButton">Change</button>
+    <div id="counter">0</div>
+    <button id="Artma">Artır</button>
+    <button id="Azalt">Azalt</button>
+
+    <div class="menu" id="menu">
+      <div class="menu-title" id="menuTitle">Menyu</div>
+      <div class="menu-items" id="menuItems">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <p id="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam, totam
+      cumque assumenda facilis cum provident excepturi dolor repellendus fugit?
+    </p>
+    <button id="shadow">Gizlə / Göstər</button>
+
+    <input type="text" id="search" placeholder="Axtarış..." />
+    <ul id="itemList">
+      <li>Bakı</li>
+      <li>Gəncə</li>
+      <li>Lənkəran</li>
+      <li>Şəki</li>
+      <li>Mingəçevir</li>
+      <li>Quba</li>
+      <li>Qəbələ</li>
+    </ul>
+
+<script src="lesson1.js"></script>
+  </body>
+</html>
